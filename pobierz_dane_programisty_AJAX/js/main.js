@@ -1,6 +1,5 @@
 'use scrict';
 
-
 function ajax(method, url) {
 
     let httpReq = new XMLHttpRequest();
@@ -11,7 +10,6 @@ function ajax(method, url) {
                 let returnData = httpReq.responseText;
                 httpReq.onsuccess(returnData);
                 httpReq = null;
-
             }
         }
     }
@@ -40,6 +38,7 @@ function ajax(method, url) {
 
 
     }
+
     httpReq.send();
 
 }
