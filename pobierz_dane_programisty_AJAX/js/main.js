@@ -43,7 +43,9 @@ function ajax(method, url) {
 
 }
 
+var $div = $("<div id='dane-programisty'></div>");
 
+$("button").after($div);
 
 document.getElementById('btn').addEventListener('click', function pobierzDane() {
     ajax('GET', 'https://akademia108.pl/kurs-front-end/ajax/1-pobierz-dane-programisty.php');
